@@ -1,0 +1,144 @@
+#div0 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('../img/menu-header.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.header-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.2)
+}
+
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.icon-container {
+    position: absolute;
+    display: flex;
+    top: 2%;
+    right: 10px;
+    
+}
+
+.icon-text {
+    margin-left: 20px;
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo-text {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'PT Serif', serif;
+    font-size: 55px;
+}
+
+.menu-row {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    gap: 40px;
+    overflow: auto;
+}
+
+.menu-container div {
+    flex: 1;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+
+.menu-item img {
+    height: 200px;
+    width: 600px;
+    object-fit: cover;
+    padding-bottom: -10px;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    color: black;
+    justify-content: center;
+    align-items: stretch;
+    overflow: auto;
+    background: rgb(151, 0, 0);
+    height: 300px;
+}
+
+.info-container {
+    display: flex; 
+    justify-content: space-between; 
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.info-container div {
+    flex: 1; /* give all child divs equal width */
+    height: 500px;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 30px;
+    color: white;
+}
+h2 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 25px;
+    color: white;
+}
+
+.menu-title {
+    font-family: 'PT Serif', serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.menu-description {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.menu-price {
+    font-family: 'PT Serif', serif;
+    font-size: 40px;
+    font-weight: 700;
+}
