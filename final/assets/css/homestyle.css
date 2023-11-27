@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D1E1EB;
+}
+
+.wrapper {
+  width: 600px;
+  height: 500px;
+  padding: 35px;
+  border-radius: 30px;
+  border: 5px solid #2A0000;
+  background: #F0FBF6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #2A0000;
+  position: relative; /* For pseudo-elements */
+}
+
+.main-content {
+  text-align: center;
+}
+
+.start-button {
+  background-color: #A52A2A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 20px 0;
+  display: inline-block;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.start-button:hover {
+  background-color: #B22222;
+}
+
+.description {
+  font-size: 1em;
+  color: #2A0000;
+}
+
+.star {
+  position: absolute;
+  width: 50px; /* Adjust as per your design */
+  height: auto;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Decorative lines */
+.header h1:before, .header h1:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #2A0000; /* Line color */
+  width: 50px; /* Or the length of the line you prefer */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header h1:before {
+  left: -60px; /* Adjust the position */
+}
+
+.header h1:after {
+  right: -60px; /* Adjust the position */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header h1:before, .header h1:after {
+    width: 40px;
+    left: -50px; 
+    right: -50px;
+  }
+
+  .start-button {
+    padding: 8px 18px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .wrapper {
+    width: 95%;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .start-button {
+    padding: 6px 16px;
+    font-size: 1em;
+  }
+}
