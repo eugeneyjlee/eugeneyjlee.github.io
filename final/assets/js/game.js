@@ -64,20 +64,20 @@ function flipCardEvent(event) {
 
     if (cardOne && cardTwo) {
         disableDeck = true;
-        setTimeout(checkForMatch, 1000);
+        setTimeout(checkMatch, 1000);
     }
 }
 
 // Checks if two flipped cards match
-function checkForMatch() {
+function checkMatch() {
     let imgOne = cardOne.querySelector(".back-view img").src;
     let imgTwo = cardTwo.querySelector(".back-view img").src;
-    if (imgOne === imgTwo) handleMatch();
-    else handleNoMatch();
+    if (imgOne === imgTwo) matchSuccess();
+    else matchFail();
 }
 
-// Handles a successful match
-function handleMatch() {
+// Successful match
+function matchSuccess() {
     matchedCard++;
     cardOne.classList.add("matched");
     cardTwo.classList.add("matched");
@@ -85,8 +85,8 @@ function handleMatch() {
     resetTurn();
 }
 
-// Handles a failed match
-function handleNoMatch() {
+// Failed match
+function matchFail() {
     cardOne.classList.remove("flip");
     cardTwo.classList.remove("flip");
     resetTurn();
