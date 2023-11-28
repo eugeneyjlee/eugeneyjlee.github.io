@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
 
-/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playpen Sans', sans-serif;
 }
 
 body, html {
@@ -16,7 +15,8 @@ body, html {
   background: #D1E1EB;
 }
 
-.wrapper {
+/* Main Game Container Styles */
+.box {
   width: 600px;
   height: 500px;
   padding: 35px;
@@ -31,16 +31,23 @@ body, html {
   justify-content: space-around;
 }
 
+/* Header Styles */
+.header {
+  margin-bottom: -70px;
+}
+
 .header h1 {
   font-size: 2.5em;
   color: #2A0000;
-  position: relative; /* For pseudo-elements */
+  position: relative;
 }
 
+/* Main Content Styles */
 .main-content {
   text-align: center;
 }
 
+/* Button Styles */
 .start-button {
   background-color: #A52A2A;
   color: white;
@@ -51,24 +58,28 @@ body, html {
   text-decoration: none;
   margin: 20px 0;
   display: inline-block;
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  transition: background-color 0.3s;
 }
 
+/* Button Hover Effect */
 .start-button:hover {
   background-color: #B22222;
 }
 
+/* Description Text Styles */
 .description {
   font-size: 1em;
   color: #2A0000;
 }
 
+/* Star Image Positioning */
 .star {
   position: absolute;
-  width: 50px; /* Adjust as per your design */
+  width: 50px;
   height: auto;
 }
 
+/* Specific Star Positions */
 .top-left {
   top: 10px;
   left: 10px;
@@ -79,28 +90,9 @@ body, html {
   right: 10px;
 }
 
-/* Decorative lines */
-.header h1:before, .header h1:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  background-color: #2A0000; /* Line color */
-  width: 50px; /* Or the length of the line you prefer */
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.header h1:before {
-  left: -60px; /* Adjust the position */
-}
-
-.header h1:after {
-  right: -60px; /* Adjust the position */
-}
-
-/* Responsive adjustments */
+/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 700px) {
-  .wrapper {
+  .box {
     width: 90%;
     padding: 20px;
   }
@@ -111,7 +103,7 @@ body, html {
 
   .header h1:before, .header h1:after {
     width: 40px;
-    left: -50px; 
+    left: -50px;
     right: -50px;
   }
 
@@ -121,8 +113,9 @@ body, html {
   }
 }
 
+/* Further Adjustments for Even Smaller Screens */
 @media screen and (max-width: 530px) {
-  .wrapper {
+  .box {
     width: 95%;
     height: auto;
   }
